@@ -1,0 +1,25 @@
+.table-auto {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-auto th,
+  .table-auto td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table-auto th {
+    background-color: #f2f2f2;
+  }
+  
+  .table-auto tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table-auto tbody tr:hover {
+    background-color: #d4e3fc;
+  }
+  

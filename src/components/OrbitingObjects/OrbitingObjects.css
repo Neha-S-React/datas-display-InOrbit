@@ -1,0 +1,91 @@
+/* @keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes orbit1 {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit2 {
+  from {
+    transform: rotate(0deg) translateX(100px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(100px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit3 {
+  from {
+    transform: rotate(0deg) translateX(120px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+  }
+}
+
+@keyframes orbit4 {
+  from {
+    transform: rotate(0deg) translateX(140px) rotate(100deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(140px) rotate(-360deg);
+  }
+}
+@keyframes orbit5 {
+  from {
+    transform: rotate(0deg) translateX(140px) rotate(100deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(140px) rotate(-360deg);
+  }
+}
+
+
+.animate-orbit1 {
+  animation: orbit1 60s linear infinite;
+}
+
+.animate-orbit2 {
+  animation: orbit2 60s linear infinite;
+}
+
+.animate-orbit3 {
+  animation: orbit2 60s linear infinite;
+}
+.animate-orbit4 {
+  animation: orbit2 60s linear infinite;
+}
+.animate-orbit5 {
+  animation: orbit2 25s linear infinite;
+}
+.earth {
+  --d:80px;
+  width: var(--d);
+  height:var(--d);
+  display:inline-block;
+  margin: 5px;
+  border-radius: 50%;
+  box-shadow: -20px -20px 50px 2px #000 inset, 0 0 20px 2px #000;
+  background: 
+    url(https://i.stack.imgur.com/3SLqF.jpg)
+    0/auto 100%;
+  animation: spin 10s linear infinite;
+  margin-top: 80px;
+}
+
+@keyframes spin {
+  to {
+    background-position:200% 0;
+  }
+}
